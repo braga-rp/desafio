@@ -2,7 +2,7 @@
 
 # Table of Contents
 1. [Introdução](#introdução)
-    1. [Como usar o código](#uso)
+    1.1 [Como usar o código](#uso)
 2. [Análise dos dados](#analise)
 3. [Modelagem](#modelo)
 4. [Api](#api)
@@ -92,21 +92,21 @@ $ run_info --help
 para ver a relação de parâmetros a serem passados
 ### 2.2.2 Analisando os resultados
 O retorno deste endpoint será um dataframe de informações úteis
-![dataframe_info](resources/info/info_dataframe.jpg)
+![dataframe_info](images/info_dataframe.jpg)
 
 e o dataframe original que foi lido. Abaixo temos os gráficos gerados pelos métodos de padronização dos dados.
 
 **Data set original**
-![original_dataset](resources/graphs/unchanged_features.jpg)
+![original_dataset](images/unchanged_features.jpg)
 
 **MinMaxScaler**
-![original_dataset](resources/graphs/min_max_scaler.jpg)
+![original_dataset](images/min_max_scaler.jpg)
 
 **Normalizer**
-![original_dataset](resources/graphs/normalizer.jpg)
+![original_dataset](images/normalizer.jpg)
 
 **PowerTransformer**
-![original_dataset](resources/graphs/power_transformer.jpg)
+![original_dataset](images/power_transformer.jpg)
 
 
 Podemos ver a partir do info que existem alguns problemas nos dados, o primeiro e mais aparente é na coluna ```participacao_falencia_valor``` não tem nenhuma variância sendo composta por somente um único valor, isso será o suficiente pra descarta-lá mais a frente quando entrarmos no processo de feature engineering. Todas as colunas categóricas apresentam valores faltantes, a correção ou eliminação destes será importante pra reduzir o viés do modelo. Temos métodos comuns em data science para tratar estes valores em colunas categóricas, 
@@ -176,11 +176,11 @@ Como podemos ver o modelo random forest performou muito melhor que o de regress�
 
 **Roc curve for logistic regression**
 
-![roc_lr](resources/graphs/lr_roc_auc.png)
+![roc_lr](images/lr_roc_auc.png)
 
 **Roc curve for random forest**
 
-![rf_roc](resources/graphs/rf_roc_auc.png)
+![rf_roc](images/rf_roc_auc.png)
 
 Como temos o 0 como negativo e 1 como positivo e no nosso caso 0 significa pago e 1 calote e dado o resultado do modelo escolhi continuar com o random forest  antes da otimização pois com o precision maior temos menos falsos positivos que no nosso caso erraríamos pouco em relação a classificar como calote alguém que irá pagar, além de praticamente todas as métricas estarem melhor nesse modelo.
 
