@@ -1,0 +1,19 @@
+POST http://0.0.0.0:8080/predict/ HTTP/1.1
+content-type: application/json
+
+{
+    "default_3months": 0,
+    "ioi_36months": 58.0,
+    "ioi_3months": 18.236092447,
+    "valor_por_vencer": 0.0,
+    "valor_vencido": 0.0,
+    "valor_quitado": 242100.7,
+    "quant_protestos": 0,
+    "valor_protestos": 0.0,
+    "quant_acao_judicial": 0,
+    "acao_judicial_valor": 0.0,
+    "dividas_vencidas_valor": 0.0,
+    "dividas_vencidas_qtd": 0,
+    "falencia_concordata_qtd": 0,
+    "valor_total_pedido": 34665.6749381255
+}
