@@ -1,0 +1,16 @@
+{
+    "default_3months": 1,
+    "ioi_36months": 16.0526315789,
+    "ioi_3months": 7.5,
+    "valor_por_vencer": 224132.85,
+    "valor_vencido": 0.0,
+    "valor_quitado": 4960846.21,
+    "quant_protestos": 0,
+    "valor_protestos": 3.0,
+    "quant_acao_judicial": 20,
+    "acao_judicial_valor": 4960846.21,
+    "dividas_vencidas_valor": 4960846.21,
+    "dividas_vencidas_qtd": 0,
+    "falencia_concordata_qtd": 0,
+    "valor_total_pedido": 34665.6749381255
+}

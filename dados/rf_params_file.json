@@ -1,0 +1,8 @@
+{
+    "criterion": ["gini", "entropy"],
+    "max_depth": [8, 13, 21, 34, 55],
+    "min_samples_split": [55, 89, 144, 233],
+    "min_samples_leaf": [3, 5, 8, 13, 21, 34],
+    "max_features": ["sqrt", "log2", "auto"],
+    "oob_score": ["True", "False"]
+}
